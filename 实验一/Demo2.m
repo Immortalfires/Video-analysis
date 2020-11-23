@@ -1,0 +1,15 @@
+figure();
+I=imread('D:\视频大数据分析\Lena_256x256.bmp');
+subplot(2,2,1);
+imshow(I);
+title('原始图像');
+subplot(2,2,2);
+J=histeq(I);
+imshow(J)
+title('均衡化后');
+subplot(2,2,3);
+imhist(I)
+title('原始灰度直方图')
+subplot(2,2,4);
+imhist(J)
+title('均衡化后的灰度直方图');

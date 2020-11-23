@@ -1,0 +1,10 @@
+figure();
+I=imread('lena_color_256x256.jpg');
+subplot(1,2,1);
+imshow(I);
+title('原始图像');
+I2=im2double(rgb2gray(I));
+I2=log(I2+1);
+subplot(1,2,2);
+imshow(I2);
+title('非线性变换后图像');

@@ -1,0 +1,10 @@
+figure();
+I=imread('D:\视频大数据分析\Lena_256x256.bmp');
+subplot(1,2,1);
+imshow(I);
+title('原始图像');
+J=graythresh(I);
+bw=im2bw(I,J);
+subplot(1,2,2);
+imshow(bw);
+title('二值化处理');
