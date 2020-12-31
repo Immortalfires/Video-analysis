@@ -7,6 +7,7 @@ WEB-INF/
 *.class
 *.doc
 *.docx
+test/*
 
 # Log file
 *.log
